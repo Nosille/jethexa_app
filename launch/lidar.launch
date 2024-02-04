@@ -1,0 +1,4 @@
+<launch>
+	<include file="$(find jethexa_peripherals)/launch/lidar.launch"> </include>
+	<node name="lidar_app" pkg="jethexa_app" type="lidar_main.py" output="screen" respawn="true"> </node>
+</launch>
